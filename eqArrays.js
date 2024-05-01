@@ -7,12 +7,23 @@ const assertEqual = function(actual, expected) {
 };
   
 const eqArrays = function(arr1, arr2) {
-  if (arr1.join(", ") === arr2.join(", ")) {
-    return true;
-  } else {
-    return false;
+  if (arr1.length === arr2.length) {
+    for (let i = 0; i < arr1.lenght; i++)
+      if (arr1[i] === arr2[1]) {
+        return true;
+      }
   }
+  return false;
 };
+
+// my first attempt that converted them to strings to compare
+// const eqArrays = function(arr1, arr2) {
+//   if (arr1.join(", ") === arr2.join(", ")) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
 
 
 // test case
