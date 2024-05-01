@@ -11,11 +11,11 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
   
-const assertArraysEqual = function(result) {
-  if (result === true) {
-    console.log(`The arrays are equal`);
+const assertArraysEqual = function(arrActual, arrExpected) {
+  if (eqArrays(arrActual, arrExpected) === true) {
+    console.log(`✅The arrays [${arrActual}] and [${arrExpected}] are equal`);
   } else {
-    console.log(`The arrays are not equal`);
+    console.log(`🔴The arrays [${arrActual}] and [${arrExpected}] are not equal`);
   }
 };
 
@@ -29,15 +29,17 @@ const without = function(source, itemsToRemove) {
   return newArr;
 };
 
+// test case
+assertArraysEqual(without([1, 2, 3], [1]), [2, 3]); // should pass
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); // should pass
+assertArraysEqual(without(["1", "2", "3"], []), ["1", "2", "3"]); // should pass
+assertArraysEqual(without([], [1, 2, "3"]), []); // should pass
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2", "3"]); // should fail
 
-// // test case
-console.log(without([1, 2, 3], [1])); // => [2, 3]
-console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
-console.log(without(["1", "2", "3"], [])); // => ["1", "2", "3"]
-console.log(without([], [1, 2, "3"])); // => []
+
 
 //Write a test case to make sure that the original array is not modified.
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); // no need to capture return value for this test case
 // Make sure the original array was not altered by the without function
-assertArraysEqual(eqArrays(words, ["hello", "world", "lighthouse"]));
+assertArraysEqual(words, ["hello", "world", "lighthouse"]);
