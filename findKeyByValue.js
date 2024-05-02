@@ -13,6 +13,7 @@ const findKeyByValue = function(object, value) {
   for (let key in object) {
     if (object[key] === value) {
       valueKey = key;
+      break;
     }
   }
   return valueKey;
