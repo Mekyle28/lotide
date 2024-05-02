@@ -20,15 +20,16 @@ const countLetters = function(string) {
   return results;
 };
 
-
+// test code
 console.log(countLetters("I really hope this works"));
 console.log(countLetters("watermelon"));
 console.log(countLetters(""));
 
 
-let result2 = countLetters("a cat");
+let result2 = countLetters("A cat");
 
-assertEqual(result2["a"], 2);
+assertEqual(result2["a"], 1);
 assertEqual(result2["c"], 1);
 assertEqual(result2["t"], 1);
+assertEqual(result2["A"], 1);
 
