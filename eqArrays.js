@@ -24,6 +24,8 @@ assertEqual(eqArrays([1, 23], [12, 3]), false);
 console.log("-----------");
 
 module.exports = eqArrays;
+// paste this into file that you want to use this function.
+// const eqArrays = require("/home/labber/lighthouse/lotide/eqArrays"); 
 
 // //my first attempt that converted them to strings to compare
 // const eqArrays = function(arr1, arr2) {
