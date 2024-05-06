@@ -1,9 +1,4 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    return console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  }
-  return console.log(`🔴🔴🔴Assertion Failed: ${actual} !== ${expected}`);
-};
+const assertEqual = require("/home/labber/lighthouse/lotide/assertEqual");
 
 // function that takes an object and a callback and returns the
 // first key for which the callback returns a truthy value.
@@ -14,6 +9,7 @@ const findKey = function (object, callback) {
 };
 
 // test case
+console.log("findKey tests:");
 assertEqual(
   findKey(
     {
