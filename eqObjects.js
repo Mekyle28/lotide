@@ -49,7 +49,7 @@ console.log("--------------");
 
 module.exports = eqObjects;
 // paste this into file to use this function 
-//const eqArrays = require("/home/labber/lighthouse/lotide/eqObjects"); 
+//const eqObjects = require("/home/labber/lighthouse/lotide/eqObjects"); 
 
 
 
