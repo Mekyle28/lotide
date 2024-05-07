@@ -34,8 +34,7 @@ module.exports = {
     map, 
     takeUntil, 
     without, 
-    assertArraysEqual,
-};
+   };
 
-console.log(module.exports);
+
 

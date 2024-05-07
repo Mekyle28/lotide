@@ -1,4 +1,4 @@
-const eqArrays = require("/home/labber/lighthouse/lotide/eqArrays"); 
+const eqArrays = require("../lotide/eqArrays")
 
 // this function checks if two arrays are equal and logs the result.
 const assertArraysEqual = function(arrActual, arrExpected) {

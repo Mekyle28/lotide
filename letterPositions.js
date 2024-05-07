@@ -1,6 +1,3 @@
-const assertArraysEqual = require("/home/labber/lighthouse/lotide/assertArraysEqual");
-const eqArrays = require("/home/labber/lighthouse/lotide/eqArrays");
-
 // function takes a string and returns an object with the
 // index value for each letter in the string
 const letterPositions = (string) => {
@@ -15,14 +12,4 @@ const letterPositions = (string) => {
   }
   return results;
 };
-
-//test code
-console.log("letterPositions test:");
-console.log(letterPositions(""));
-
-let object = letterPositions("hello");
-
-assertArraysEqual(object["h"], [0]);
-assertArraysEqual(object["e"], [1]);
-assertArraysEqual(object["l"], [2, 3]);
-assertArraysEqual(object["o"], [4]);
+module.exports = letterPositions;

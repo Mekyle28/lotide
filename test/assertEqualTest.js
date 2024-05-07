@@ -1,4 +1,4 @@
-const assertEqual = require("/home/labber/lighthouse/lotide/assertEqual");
+const assertEqual = require("../assertEqual");
 
 
 

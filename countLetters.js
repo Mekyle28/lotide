@@ -13,16 +13,5 @@ const countLetters = function (string) {
   return results;
 };
 
-// test code
-console.log("countLetters test: object (letters-numbers)");
-console.log(countLetters("I really hope this works"));
-console.log(countLetters("watermelon"));
-console.log(countLetters(""));
+module.exports = countLetters;
 
-console.log("countLetters test: assert=");
-let result2 = countLetters("A cat");
-
-assertEqual(result2["a"], 1);
-assertEqual(result2["c"], 1);
-assertEqual(result2["t"], 1);
-assertEqual(result2["A"], 1);
