@@ -14,6 +14,7 @@ const letterPositions = require('./letterPositions');
 const map = require('./map');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
+const assertArraysEqual = require('./assertArraysEqual');
 
 
 module.exports = {
@@ -32,5 +33,6 @@ module.exports = {
     letterPositions: letterPositions, 
     map: map, 
     takeUntil: takeUntil, 
-    without: without
+    without: without, 
+    assertArraysEqual: assertArraysEqual, 
 };
